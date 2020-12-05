@@ -1,0 +1,70 @@
+*
+{
+    box-sizing: border-box;
+}
+.msg_container
+{
+    max-width: 500px;
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+}
+
+button
+{
+    padding: 7px;
+    border-radius: 15px;
+    border-color: black;
+   border-style: solid;
+   background-color:rgb(19, 19, 179);
+}
+.input-icons i { 
+    position: absolute; 
+} 
+  
+.input-icons { 
+    width: 100%; 
+    margin-bottom: 10px; 
+} 
+  
+.icon { 
+    padding: 15px; 
+    color:rgb(121, 116, 116); 
+    min-width: 50px; 
+    text-align: center; 
+} 
+.icon1 { 
+    left: 160px;
+    padding: 15px; 
+    color:rgb(121, 116, 116); 
+    min-width: 50px; 
+    text-align: center; 
+} 
+
+.input-field { 
+    max-width: 100%;
+    border-radius: 15px;
+    padding: 10px; 
+    text-align: center; 
+    background-color: rgb(29, 28, 28);
+    color: white;
+    -moz-border-radius: 15px;
+} 
+#message-container
+{
+    
+    color: black;
+    width: 60%;
+    max-width: 1200px;
+    
+}
+#message-container div
+{
+    background-color: #ccc;
+    padding: 5px;
+}
+#message-container div:nth-child(2n)
+{
+    background-color: #FFF;
+    padding: 5px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="message-container">
+        <form action=""  class="msg_container" id="send-container">
+            
+            <span class="input-icons"> 
+                <i class="fas fa-grin icon"></i> 
+    
+                <input class="input-field" id="message-input"
+                       type="text" 
+                       placeholder="Type a message" onblur="Watermark(this, event);" onfocus="Watermark(this, event);"> 
+                       
+                       <i class="fas fa-camera icon1"></i>
+            </span>
+            <span>
+            <button type="submit" id="send-button" ><svg width="1.7em" height="1.4em" viewBox="0 0 16 16" class="bi bi-cursor-fill" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+              </svg></button>
+            </span>
+        </form>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
